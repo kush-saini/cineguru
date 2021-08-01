@@ -102,7 +102,7 @@ p {
 
 .carousel-cell img {
   display: block;
-  height: 200px;
+  height: 200px !important;
   border-radius: 20px;    
 }
 
