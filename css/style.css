@@ -1,0 +1,454 @@
+@font-face {
+    font-family: 'Georgia Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Regular'), url('georgia.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Georgia Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Italic'), url('georgiai.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Georgia Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Bold'), url('georgiab.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Georgia Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Bold Italic'), url('georgiaz.woff') format('woff');
+    }
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;    
+    
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+    
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F6EEBA;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+    
+}
+/*
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');*/
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+/*  font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Georgia Regular';
+}
+
+html {
+  scroll-behavior: smooth;
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');*/
+.page-icon {
+	border-radius: 10px;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.rating {
+	display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 2px;
+}
+.review {
+	    font-weight: 400;
+    line-height: 1.5em;
+    text-align: justify;
+/*
+    font-family: 'Inconsolata', monospace;
+    text-shadow:  0 0 10px rgba(231, 51, 255, 0.73),
+               0 0 10px rgba(39, 0, 253, 0.96); 
+*/
+}
+.logo {
+	float: left;
+}
+.story{
+/*
+	text-shadow:  0 0 5px rgba(51, 161, 255, 0.62),
+               0 0 10px rgba(39, 0, 253, 0.96); 
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+    text-align: justify;
+*/
+        font-weight: 400;
+    line-height: 1.5em;
+    text-align: justify;
+}
+p {
+    
+    font-size: 14px;
+}
+.carousel {
+  background: white;
+}
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+  border-radius: 20px;    
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 768px){
+.story2
+{
+    text-align: center !important;
+}
+}
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+
+/* ============= Generic CSS ============== */
+
+.section-title {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    
+}
+.centerr
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-title h2 {
+    position: relative;
+    text-align: center;
+    color: #171C24;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.section-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: #129CF3;
+    margin-left: -30px;
+}
+.img-responsive {
+	height: 400px;
+    width:  500px;
+    border-radius: 10px;
+/*    box-shadow: 0px 0px 20px #171c24;*/
+        box-shadow: 0px 0px 24px rgb(0 0 0 / 48%);
+}
+nav{
+  display: flex;
+    height: 80px;
+    margin-bottom: 33%;
+    position: fixed;
+    box-shadow: 0px 0px 7px darkgrey;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255, 0.3);
+    z-index: 2;
+    opacity: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+    z-index:1;
+/*    background: #fff;*/
+    
+}
+nav ul li{
+  margin: 0 5px;
+    
+}
+nav ul li a{
+  color: rgb(45, 46, 47);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+        color: cadetblue;
+    text-decoration: none;
+/*
+  color: cyan;
+  background: #171C24;
+    text-decoration: none;
+    box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+*/
+}
+nav .menu-btn i{
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+/*    background: #fff;*/
+      backdrop-filter: blur(9px);
+    background: rgba(255,255,255, 0.9);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+      text-decoration: none;
+  }
+  ::selection{
+  color: #fff;
+  background: #1cc7d0;
+}
+  
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+      
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: darkred;
+      text-decoration: none;
+  }
+}
+.section-title p {
+    color: #333;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* =========== Navigation ============ */
+
+/*
+.navbar-default {
+    background-color: transparent;
+    border-color: #444;
+    z-index: 110;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #B5B5B5;
+    font-family: "Raleway", sans-serif;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #129CF3;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #B5B5B5;
+}
+.navbar-brand {
+    padding: 9px 15px;
+}
+.navbar-brand img  {
+     transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.navbar-default .navbar-nav > .active>a, 
+.navbar-default .navbar-nav > .active>a:hover,
+.navbar-default .navbar-nav > .active>a:focus {
+    background-color: transparent;
+    color: #129CF3;
+} 
+
+
+*/
+
+
+
+/* ========= About Us ============= */
+.choose-us-wraper {
+
+    padding-top: 102px;
+}
+
+.choose-us-title {
+    padding-bottom: 50px;
+    
+    
+}
+.choose-us-title h2 {
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: 30px;
+    line-height: 37px;
+    position: relative;
+}
+.choose-us-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 70px; 
+    height: 1px;
+    background-color: #129CF3;
+}
+
+.choose-us-title p {
+    margin-top: 40px;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
