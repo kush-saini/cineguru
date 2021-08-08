@@ -40,7 +40,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #F6EEBA;
+  background-color: #a8bbbf;
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
@@ -393,14 +393,14 @@ input[type="checkbox"]{
     
     
 }
-.choose-us-title h2 {
+.choose-us-title h1 {
     text-transform: uppercase;
     font-weight: 650;
     font-size: 30px;
     line-height: 37px;
     position: relative;
 }
-.choose-us-title h2:after {
+.choose-us-title h1:after {
     content: "";
     position: absolute;
     bottom: -12px;
